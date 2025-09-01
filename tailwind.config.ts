@@ -61,7 +61,29 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Brand jewel tones
+				emerald: 'hsl(var(--emerald))',
+				ruby: 'hsl(var(--ruby))',
+				sapphire: 'hsl(var(--sapphire))',
+				gold: 'hsl(var(--gold))',
+				ivory: 'hsl(var(--ivory))',
+				charcoal: 'hsl(var(--charcoal))'
+			},
+			fontFamily: {
+				display: ['var(--font-display)', 'serif'],
+				ui: ['var(--font-ui)', 'sans-serif'],
+				sans: ['var(--font-ui)', 'sans-serif'],
+			},
+			backgroundImage: {
+				'gradient-jewel': 'var(--gradient-jewel)',
+				'gradient-gold': 'var(--gradient-gold)',
+				'gradient-subtle': 'var(--gradient-subtle)',
+			},
+			boxShadow: {
+				'soft': 'var(--shadow-soft)',
+				'jewel': 'var(--shadow-jewel)',
+				'gold': 'var(--shadow-gold)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
