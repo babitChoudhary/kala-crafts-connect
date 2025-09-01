@@ -139,7 +139,9 @@ export const DesignerStories = () => {
                 {/* CTA */}
                 <div className="mt-4 pt-3 border-t border-border">
                   <span className="text-sm font-medium text-primary group-hover:underline">
-                    Watch Story →
+                    <a href="/vendor/1" className="text-current no-underline">
+                      Watch Story →
+                    </a>
                   </span>
                 </div>
               </CardContent>
@@ -163,7 +165,9 @@ export const DesignerStories = () => {
               Follow 200+ artisan stories
             </span>
             <button className="text-sm font-medium text-primary hover:underline">
-              Explore All →
+              <a href="/products" className="text-current no-underline">
+                Explore All →
+              </a>
             </button>
           </div>
         </div>

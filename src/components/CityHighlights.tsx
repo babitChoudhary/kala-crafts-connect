@@ -107,7 +107,9 @@ export const CityHighlights = () => {
                     <span>{city.designers} designers</span>
                   </div>
                   <span className={`text-sm font-medium ${city.textColor} group-hover:underline`}>
-                    Explore →
+                    <a href="/vendor/1" className="text-current no-underline">
+                      Explore →
+                    </a>
                   </span>
                 </div>
               </CardContent>

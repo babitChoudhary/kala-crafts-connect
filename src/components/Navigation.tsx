@@ -57,23 +57,23 @@ export const Navigation = () => {
           </div>
 
           {/* Navigation links - hidden on mobile */}
-          <nav className="hidden lg:flex items-center gap-8">
-            <a href="#" className="text-foreground hover:text-primary font-medium transition-colors">
-              Designers
-            </a>
-            <a href="#" className="text-foreground hover:text-primary font-medium transition-colors">
-              Women
-            </a>
-            <a href="#" className="text-foreground hover:text-primary font-medium transition-colors">
-              Men
-            </a>
-            <a href="#" className="text-foreground hover:text-primary font-medium transition-colors">
-              Jewelry
-            </a>
-            <a href="#" className="text-foreground hover:text-primary font-medium transition-colors">
-              Custom
-            </a>
-          </nav>
+            <nav className="hidden lg:flex items-center gap-8">
+              <a href="/products" className="text-foreground hover:text-primary font-medium transition-colors">
+                Designers
+              </a>
+              <a href="/products?category=women" className="text-foreground hover:text-primary font-medium transition-colors">
+                Women
+              </a>
+              <a href="/products?category=men" className="text-foreground hover:text-primary font-medium transition-colors">
+                Men
+              </a>
+              <a href="/products?category=jewelry" className="text-foreground hover:text-primary font-medium transition-colors">
+                Jewelry
+              </a>
+              <a href="/product/1/customize" className="text-foreground hover:text-primary font-medium transition-colors">
+                Custom
+              </a>
+            </nav>
 
           {/* Action buttons */}
           <div className="flex items-center gap-4">
@@ -82,22 +82,22 @@ export const Navigation = () => {
             </Button>
             
             <div className="flex items-center gap-2">
-              <Button variant="ghost" size="icon" className="relative">
-                <Heart className="h-5 w-5" />
-                <Badge className="absolute -top-2 -right-2 h-5 w-5 p-0 text-xs bg-ruby text-white">
+              <Button variant="ghost" size="icon" className="relative hover:bg-muted rounded-full">
+                <Heart className="h-5 w-5 text-foreground" />
+                <Badge className="absolute -top-1 -right-1 h-4 w-4 p-0 text-xs bg-ruby text-white rounded-full flex items-center justify-center">
                   3
                 </Badge>
               </Button>
               
-              <Button variant="ghost" size="icon" className="relative">
-                <ShoppingBag className="h-5 w-5" />
-                <Badge className="absolute -top-2 -right-2 h-5 w-5 p-0 text-xs bg-ruby text-white">
+              <Button variant="ghost" size="icon" className="relative hover:bg-muted rounded-full">
+                <ShoppingBag className="h-5 w-5 text-foreground" />
+                <Badge className="absolute -top-1 -right-1 h-4 w-4 p-0 text-xs bg-ruby text-white rounded-full flex items-center justify-center">
                   2
                 </Badge>
               </Button>
               
-              <Button variant="ghost" size="icon">
-                <User className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="hover:bg-muted rounded-full">
+                <User className="h-5 w-5 text-foreground" />
               </Button>
               
               <Button
@@ -129,19 +129,19 @@ export const Navigation = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-border pt-4">
             <nav className="flex flex-col gap-4">
-              <a href="#" className="text-foreground hover:text-primary font-medium">
+              <a href="/products" className="text-foreground hover:text-primary font-medium">
                 Designers
               </a>
-              <a href="#" className="text-foreground hover:text-primary font-medium">
+              <a href="/products?category=women" className="text-foreground hover:text-primary font-medium">
                 Women
               </a>
-              <a href="#" className="text-foreground hover:text-primary font-medium">
+              <a href="/products?category=men" className="text-foreground hover:text-primary font-medium">
                 Men
               </a>
-              <a href="#" className="text-foreground hover:text-primary font-medium">
+              <a href="/products?category=jewelry" className="text-foreground hover:text-primary font-medium">
                 Jewelry
               </a>
-              <a href="#" className="text-foreground hover:text-primary font-medium">
+              <a href="/product/1/customize" className="text-foreground hover:text-primary font-medium">
                 Custom
               </a>
               <Button variant="outline" className="w-full mt-4">

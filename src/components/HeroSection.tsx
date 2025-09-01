@@ -102,14 +102,18 @@ export const HeroSection = () => {
             {/* CTA Buttons */}
             <div className="flex items-center gap-4">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-3 text-lg shadow-jewel">
-                {currentHero.cta}
+                <a href="/product/1/customize" className="text-white no-underline">
+                  {currentHero.cta}
+                </a>
               </Button>
               <Button 
                 variant="outline" 
                 size="lg" 
                 className="border-white text-white hover:bg-white hover:text-charcoal px-8 py-3 text-lg"
               >
-                Explore Collection
+                <a href="/products" className="text-current no-underline">
+                  Explore Collection
+                </a>
               </Button>
             </div>
           </div>
